@@ -1,0 +1,38 @@
+<xml>
+    <ctbk_version>15</ctbk_version>
+    <wifi_tx_pwr>
+        <Default_5GHZ   index="0">0</Default_5GHZ> <!--5G, Max power-->
+        <State1_5GHZ    index="1">0</State1_5GHZ>  <!--5G,WLAN+WWAN-->
+        <State2_5GHZ    index="2">3</State2_5GHZ>  <!--5G,MHS, WLAN+WAN-->
+        <Default_2GHZ   index="3">0</Default_2GHZ> <!--2G, Max power-->
+        <State1_2GHZ    index="4">0</State1_2GHZ> <!--2G,WLAN+WWAN-->
+        <State2_2GHZ    index="5">3</State2_2GHZ> <!--2G,MHS, WLAN+WAN-->
+        <State4_5GHZ    index="6">1</State4_5GHZ>  <!--5G,At head, WLAN only-->
+        <State5_5GHZ    index="7">1</State5_5GHZ>  <!--5G,At head, WLAN+WWAN-->
+        <State6_5GHZ    index="8">2</State6_5GHZ>  <!--5G,Body-Worn, WLAN only-->
+        <State7_5GHZ    index="9">2</State7_5GHZ>  <!--5G,Body-Worn, WLAN+WWAN-->
+        <State4_2GHZ    index="10">1</State4_2GHZ>  <!--2G,At head, WLAN only-->
+        <State5_2GHZ    index="11">1</State5_2GHZ>  <!--2G,At head, WLAN+WWAN-->
+        <State6_2GHZ    index="12">2</State6_2GHZ>  <!--2G,Body-Worn, WLAN only-->
+        <State7_2GHZ    index="13">2</State7_2GHZ>  <!--2G,Body-Worn, WLAN+WWAN-->
+    </wifi_tx_pwr>
+    <sar_sensors>
+        <sensor type="prox_front"               index="0">Proximity TMD3702</sensor>
+        <sensor type="prox_back"                index="1">NULL</sensor>
+        <!--from front view-->
+        <sensor type="cap_bottom_center(MLB)"   index="2">Moto_CapSense_Ch0</sensor>
+        <sensor type="cap_bottom_left(HB)"      index="3">Moto_CapSense_Ch1</sensor>
+        <sensor type="cap_top(Div_MLB)"         index="4">Moto_CapSense_Ch3</sensor>
+        <sensor type="no sensor here"           index="5">NULL</sensor>
+    </sar_sensors>
+    <!--OB5 config: 5 = 00000101b (cap_bottom_left|cap_top)-->
+    <ob5_sensor_config>5</ob5_sensor_config>
+
+    <tx0_sensor_config>
+        <sensor_default     index="0">1</sensor_default>
+        <sensor_lte_band_7  index="1">2</sensor_lte_band_7>
+        <sensor_lte_band_38 index="2">2</sensor_lte_band_38>
+        <sensor_lte_band_40 index="3">2</sensor_lte_band_40>
+        <sensor_lte_band_41 index="4">2</sensor_lte_band_41>
+    </tx0_sensor_config>
+</xml>
