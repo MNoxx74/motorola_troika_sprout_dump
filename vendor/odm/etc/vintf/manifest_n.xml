@@ -1,0 +1,20 @@
+<manifest version="1.0" type="device" target-level="3">
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.4</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.samsung_slsi.telephony.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOemSamsungslsi</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+</manifest>

@@ -1,0 +1,21 @@
+#
+# ADDITIONAL VENDOR DEFAULT PROPERTIES
+#
+ro.vndk.version=29
+persist.sys.sf.color_saturation=1.0
+ro.bt.bdaddr_path=/sys/module/scsc_bt/parameters/bluetooth_address_fallback
+persist.bluetooth.bluetooth_audio_hal.disabled=true
+ro.zygote=zygote64_32
+ro.oem_unlock_supported=1
+ro.logd.size.stats=64K
+log.tag.stats_log=I
+ro.adb.secure=1
+ro.bionic.arch=arm64
+ro.bionic.cpu_variant=generic
+ro.bionic.2nd_arch=arm
+ro.bionic.2nd_cpu_variant=cortex-a15
+persist.sys.dalvik.vm.lib.2=libart.so
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.isa.arm.variant=cortex-a15
+dalvik.vm.isa.arm.features=default

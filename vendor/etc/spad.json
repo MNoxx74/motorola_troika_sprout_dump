@@ -1,0 +1,181 @@
+{
+	"misc"	:	{
+				"libpath"     		:	"/vendor/lib64/libspad_hal.so",
+				"default_timeout"   : 	15,
+				"default_func"   	: 	"customer_operate_cmd",
+				"support"     		:	true,
+				"whitelist"   		: 	[
+											{
+												"command"     : "SAT+READNV",
+												"func"        : "nvdata_operate_cmd"
+											},
+											{
+												"command"     : "SAT+WRITENV",
+												"func"        : "nvdata_operate_cmd"
+											},
+											{
+												"command"     : "SAT+MPVERSION",
+												"func"        : "mpversion_operate_cmd"
+											},
+											{
+												"command"     : "SAT+MPNAME",
+												"func"        : "mpname_operate_cmd"
+											},
+											{
+												"command"     : "SAT+HWID",
+												"func"        : "hwid_operate_cmd"
+											},
+											{
+												"command"     : "SAT+HWVERSION",
+												"func"        : "hwversion_operate_cmd"
+											},
+											{
+												"command"     : "SAT+CURRENT",
+												"func"        : "current_operate_cmd"
+											},
+											{
+												"command"     : "SAT+SLEEP",
+												"func"        : "system_sleep_cmd"
+											},
+											{
+												"command"     : "SAT+MEMORY",
+												"func"        : "memory_check_cmd"
+											},
+											{
+												"command"     : "SAT+EMMC",
+												"func"        : "storage_checkdata_cmd"
+											},
+											{
+												"command"     : "SAT+SDCARD",
+												"func"        : "sdcard_checkdata_cmd"
+											},
+											{
+												"command"     : "SAT+TEMPERATURE",
+												"func"        : "temperature_operate_cmd"
+											},
+											{
+												"command"     : "SAT+CHARGER",
+												"func"        : "battery_test_cmd"
+											},
+											{
+												"command"     : "SAT+VOLTAGE",
+												"func"        : "voltage_operate_cmd"
+											},
+											{
+												"command"     : "SAT+AUDIO",
+												"func"        : "audio_operate_cmd"
+											},
+											{
+												"command"     : "SAT+NFC",
+												"func"        : "nfc_operate_cmd"
+											},
+											{
+												"command"     : "SAT+REBOOT",
+												"func"        : "reboot_operate_cmd"
+											},
+											{
+												"command"     : "SAT+FLASHLIGHT",
+												"func"        : "flashlight_operate_cmd"
+											},
+											{
+												"command"     : "SAT+SWITCHUSB",
+												"func"        : "usb_switch_cmd"
+											},
+											{
+												"command"     : "SAT+SAVEFTI",
+												"func"        : "save_fti_cmd"
+											},
+											{
+												"command"     : "SAT+SAVEHOB",
+												"func"        : "nv_backup_cmd"
+											},
+											{
+												"command"     : "SAT+VERIFYHOB",
+												"func"        : "verify_hob_cmd"
+											},
+											{
+												"command"     : "SAT+WIFI",
+												"func"        : "wifi_operate_cmd"
+											},
+											{
+												"command"     : "SAT+BT",
+												"func"        : "bt_operate_cmd"
+											},
+											{
+												"command"     : "SAT+RESTOREHOB",
+												"func"        : "nv_restore_cmd"
+											}
+						        		]
+				},
+	"sensor"	:	{
+				"libpath"     		:	"/vendor/lib64/libspad_hal.so",
+				"default_timeout"   : 	15,
+				"default_func"   	: 	"",
+				"support"     		:	true,
+				"whitelist"   		: 	[
+											{
+												"command"     : "SAT+GSENSOR",
+												"func"        : "gsensor_operate_cmd"
+											},
+											{
+												"command"     : "SAT+COMPASS",
+												"func"        : "compass_operate_cmd"
+											},
+											{
+												"command"     : "SAT+GYRO",
+												"func"        : "gyro_operate_cmd"
+											},
+											{
+												"command"     : "SAT+LSENSOR",
+												"func"        : "lsensor_operate_cmd"
+											},
+											{
+												"command"     : "SAT+PSENSOR",
+												"func"        : "psensor_operate_cmd"
+											},
+											{
+												"command"     : "SAT+ASENSOR",
+												"func"        : "accelerometer_operate_cmd"
+											},
+											{
+												"command"     : "SAT+MSENSOR",
+												"func"        : "magnetometer_operate_cmd"
+											},
+											{
+												"command"     : "SAT+CAPSENSOR",
+												"timeout"	  :	10,
+												"func"        : "capsensor_operate_cmd"
+											}
+						        		]
+				},
+	"modem"	:	{
+				"libpath"    		:	"/vendor/lib64/libspad_hal.so",
+				"default_timeout"   : 	15,
+				"default_func"   	: 	"modem_operate_cmd",
+				"support"     		:	true,
+				"whitelist"  		:
+										[
+											{
+												"commands"    : [
+																"SAT+CPVERSION",
+																"SAT+SIM",
+																"SAT+AIRPLANE",
+																"SAT+VERIFYONLINE",
+																"SAT+RDIMEI",
+																"SAT+WRIMEI",
+																"SAT+RDMEID",
+																"SAT+WRMEID",
+																"SAT+SIMTRAY",
+																"SAT+SIMCOUNT",
+																"SAT+RFDETECT",
+																"SAT+SIMINFO",
+																"SAT+LOCKREAD",
+																"SAT+BLOBWRITE",
+																"SAT+LOCKWRITE"
+																],
+												"func"        : "customer_modem_cmd"
+											}
+										]
+				}
+}
+

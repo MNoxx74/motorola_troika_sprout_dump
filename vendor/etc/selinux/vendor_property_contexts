@@ -1,0 +1,248 @@
+#line 1 "device/samsung/sepolicy/common/property_contexts"
+# Reference: /system/sepolicy/private/property_contexts
+# # Common default properties for vendor and odm.
+# init.svc.odm.           u:object_r:vendor_default_prop:s0
+# init.svc.vendor.        u:object_r:vendor_default_prop:s0
+# ro.hardware.            u:object_r:vendor_default_prop:s0
+# ro.odm.                 u:object_r:vendor_default_prop:s0
+# ro.vendor.              u:object_r:vendor_default_prop:s0
+# odm.                    u:object_r:vendor_default_prop:s0
+# persist.odm.            u:object_r:vendor_default_prop:s0
+# persist.vendor.         u:object_r:vendor_default_prop:s0
+# vendor.                 u:object_r:vendor_default_prop:s0
+
+# for rild
+persist.vendor.debug_level       u:object_r:vendor_rild_prop:s0
+persist.vendor.ril.              u:object_r:vendor_rild_prop:s0
+persist.vendor.radio.            u:object_r:vendor_rild_prop:s0
+vendor.radio.ril.                u:object_r:vendor_rild_prop:s0
+vendor.sys.rild_reset            u:object_r:vendor_rild_prop:s0
+vendor.ril.                      u:object_r:vendor_rild_prop:s0
+ro.radio.imei.sv                 u:object_r:vendor_rild_prop:s0
+ro.product.model.dm              u:object_r:vendor_rild_prop:s0
+
+
+#for dmd, vcd, rild
+vendor.radio.                     u:object_r:vendor_rild_prop:s0
+
+#for cbd
+persist.vendor.cbd.               u:object_r:vendor_rild_prop:s0
+vendor.cbd.                       u:object_r:vendor_rild_prop:s0
+
+# for silentlog
+persist.vendor.dev.silentlog     u:object_r:vendor_slog_prop:s0
+persist.vendor.dev.silentlog.    u:object_r:vendor_slog_prop:s0
+
+# for camera hal
+persist.vendor.sys.camera.       u:object_r:vendor_camera_prop:s0
+persist.vendor.hifills.          u:object_r:vendor_camera_prop:s0
+persist.vendor.dualCam.          u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.           u:object_r:vendor_camera_prop:s0
+vendor.hal.camera.               u:object_r:vendor_camera_prop:s0
+
+# more vendor properties
+ro.vendor.ddk.set.afbc           u:object_r:vendor_hwc_prop:s0
+ro.vendor.cscsupported           u:object_r:vendor_default_prop:s0
+vendor.sys.mobicoredaemon.enable  u:object_r:vendor_mobicoredaemon_prop:s0
+
+# for ims
+vendor.charon                          u:object_r:vendor_ims_prop:s0
+vendor.charon.route                    u:object_r:vendor_ims_prop:s0
+
+# for wlbtd
+vendor.wlbtd.tar_files_per_trigger	u:object_r:vendor_wlbtd_prop:s0
+vendor.wlbtd.version			u:object_r:vendor_wlbtd_prop:s0
+vendor.wlan.firmware.version		u:object_r:exported_wifi_prop:s0
+vendor.wlan.driver.version		u:object_r:exported_wifi_prop:s0
+
+# for wland
+persist.vendor.wlbtlog.      u:object_r:vendor_wland_prop:s0
+exynos.wlbtlog.              u:object_r:vendor_wland_prop:s0
+exynos.sdcard.path.log       u:object_r:vendor_wland_prop:s0
+
+# for gnss
+persist.vendor.gnsslog.              u:object_r:vendor_gnss_prop:s0
+exynos.gnss.path.                    u:object_r:vendor_gnss_prop:s0
+
+# for eden
+ro.vendor.eden.devices                 u:object_r:vendor_eden_prop:s0
+ro.vendor.eden.npu.version.path        u:object_r:vendor_eden_prop:s0
+
+# vendor default
+vendor.config.               u:object_r:vendor_config_default_prop:s0
+ro.vendor.config.            u:object_r:vendor_ro_config_default_prop:s0
+persist.vendor.config.       u:object_r:vendor_persist_config_default_prop:s0
+vendor.sys.                  u:object_r:vendor_sys_default_prop:s0
+ro.vendor.sys.               u:object_r:vendor_ro_sys_default_prop:s0
+persist.vendor.sys.          u:object_r:vendor_persist_sys_default_prop:s0
+#line 1 "vendor/samsung_slsi/sscr_tools/mptool/sepolicy/property_contexts"
+persist.spad.debug              u:object_r:mptool_prop:s0 exact string
+mptool.		                	u:object_r:mptool_prop:s0
+persist.mptool.		            u:object_r:mptool_prop:s0
+#mptool.smcd.mode                u:object_r:mptool_prop:s0 exact string
+#mptool.smcd.timeout             u:object_r:mptool_prop:s0 exact int
+#mptool.smcd.connect.vcd        u:object_r:mptool_prop:s0 exact int
+mptool.smcd.                    u:object_r:mptool_prop:s0
+ro.mptool.                      u:object_r:mptool_prop:s0
+
+#line 1 "device/samsung/erd9610/mptool/sepolicy/property_contexts"
+mptool.tcmd.simulater               u:object_r:mptool_prop:s0 exact string
+
+#line 1 "vendor/samsung_slsi/telephony/common/device/samsung/sepolicy/property_contexts"
+#exynos.portfwd.nstest    u:object_r:portfwd_prop:s0
+# /device/samsung/common/sepolicy/property_contexts has these
+#
+# persist.vendor.debug_level      u:object_r:vendor_rild_prop:s0
+# persist.vendor.radio.           u:object_r:vendor_rild_prop:s0
+# persist.vendor.ril.             u:object_r:vendor_rild_prop:s0
+# vendor.radio.ril.               u:object_r:vendor_rild_prop:s0
+# vendor.sys.rild_reset           u:object_r:vendor_rild_prop:s0
+# vendor.ril.                     u:object_r:vendor_rild_prop:s0
+# ro.radio.imei.sv                u:object_r:vendor_rild_prop:s0
+# vendor.radio.                   u:object_r:vendor_rild_prop:s0
+
+# Above subset setting overrides common default properties for vendor
+# persist.vendor.         u:object_r:vendor_default_prop:s0
+# vendor.                 u:object_r:vendor_default_prop:s0
+#line 1 "motorola/security/sepolicy/common/property_contexts"
+vendor.hw.              u:object_r:vendor_hw_prop:s0
+ro.vendor.hw.           u:object_r:vendor_hw_prop:s0
+ro.vendor.bootreason    u:object_r:vendor_init_prop:s0
+vendor.log.aplogd.      u:object_r:vendor_aplogd_prop:s0
+vendor.boot_completed   u:object_r:vendor_init_prop:s0
+
+vendor.tcmd_system.     u:object_r:vendor_tcmd_prop:s0
+vendor.tcmd.            u:object_r:vendor_tcmd_prop:s0
+vendor.debug.camera     u:object_r:vendor_camera_prop:s0
+vendor.dtv.hw.status    u:object_r:vendor_dtvhw_prop:s0
+vendor.hab.             u:object_r:vendor_hab_prop:s0
+vendor.rmnet_vnd.rps_mask u:object_r:vendor_usb_prop:s0
+persist.vendor.usb.     u:object_r:vendor_usb_config_prop:s0
+vendor.usb.             u:object_r:vendor_usb_config_prop:s0
+
+# persist props
+# Treble Violation, IKSWP-11290
+persist.vendor.sys.motorola    u:object_r:moto_vendor_prop:s0
+persist.vendor.atvc     u:object_r:vendor_atvc_prop:s0
+
+# Properties group for auxiliar camera
+persist.vendor.camera.expose.aux   u:object_r:camera_aux_prop:s0
+vendor.camera.aux.packagelist      u:object_r:camera_aux_prop:s0
+vendor.camera.aux.packagelist2     u:object_r:camera_aux_prop:s0
+persist.vendor.camera.physical.num     u:object_r:camera_aux_prop:s0
+
+# Properties for mods cameras;,.c
+vendor.camera.mot.mod_warmstart    u:object_r:vendor_camera_mod_prop:s0
+
+persist.vendor.camera   u:object_r:vendor_camera_prop:s0
+persist.vendor.tcmd            u:object_r:vendor_tcmd_prop:s0
+persist.vendor.log.aplogd.     u:object_r:vendor_aplogd_prop:s0
+persist.vendor.factory         u:object_r:moto_vendor_prop:s0
+
+# ctl props
+ctl.vendor.atfwd               u:object_r:ctl_atfwd_prop:s0
+ctl.vendor.ftmipcd             u:object_r:ctl_ftmipcd_prop:s0
+ctl.vendor.thermal-engine      u:object_r:ctl_thermal_engine_prop:s0
+ctl.vendor.thermal-com         u:object_r:ctl_thermal_com_prop:s0
+ctl.vendor.mods_camd           u:object_r:ctl_mods_camd_prop:s0
+ctl.vendor.mdlog-getlogs       u:object_r:ctl_mdloggetlogs_prop:s0
+ctl.vendor.wlan_logging        u:object_r:vendor_ctl_wlan_logging_prop:s0
+ctl.vendor.wlan-getlogs        u:object_r:vendor_ctl_wlan_logging_prop:s0
+ctl.vendor.bl_logs_copy        u:object_r:ctl_bl_logs_prop:s0
+
+# moto_public_vendor_default_prop
+# They are moto_public_vendor_default_props for vendor-specific extension.
+# Usually they are for vndk-sp libs and vendor apks.
+ro.vendor.sensors.mot_ltv         u:object_r:moto_public_vendor_default_prop:s0
+# property related to ST nfc
+persist.vendor.st_nfc_gsma_support         u:object_r:moto_public_vendor_default_prop:s0
+persist.vendor.st_nfc_ignore_modem         u:object_r:moto_public_vendor_default_prop:s0
+persist.vendor.st_nfc_defaut_se            u:object_r:moto_public_vendor_default_prop:s0
+persist.vendor.st_nfc_modem_airplane       u:object_r:moto_public_vendor_default_prop:s0
+
+ro.vendor.hw.boardversion         u:object_r:vendor_hw_boardversion_prop:s0
+ro.vendor.manufacturedate         u:object_r:moto_init_prop:s0
+ro.vendor.sf.lcd_inverted         u:object_r:moto_init_prop:s0
+ro.vendor.mot.hw.                 u:object_r:moto_init_prop:s0
+ro.vendor.mot.iccid               u:object_r:moto_init_prop:s0
+ro.vendor.mot.cust_md5            u:object_r:moto_init_prop:s0
+ro.vendor.mot.product_wave        u:object_r:moto_init_prop:s0
+
+ro.vendor.build.fingerprint u:object_r:moto_var_prop:s0
+
+# property related to ssr
+persist.vendor.ssr.fdump_mpanic         u:object_r:vendor_ssr_prop:s0
+vendor.log.ssr.fdump_mpanic                 u:object_r:vendor_ssr_prop:s0
+
+# property related to mdlog
+ctl.vendor.diag_mdlog                u:object_r:ctl_mdlog_prop:s0
+vendor.log.diag_mdlog                u:object_r:vendor_mdlog_prop:s0
+persist.vendor.sys.diag_mdlog.on     u:object_r:vendor_mdlog_prop:s0
+
+# property to control ril debug log
+persist.vendor.radio.adb_log_on      u:object_r:ril_dbg_prop:s0
+
+# listing ro.product properties for init.oem.hw.sh to set
+ro.vendor.product.display      u:object_r:product_prop:s0
+ro.vendor.product.device       u:object_r:product_prop:s0
+ro.vendor.product.name         u:object_r:product_prop:s0
+ro.vendor.product.hardware.sku.variant  u:object_r:product_prop:s0
+ro.vendor.build.version.incremental u:object_r:product_prop:s0
+
+# listing the rest of properties for init.oem.hw.sh to set
+ro.vendor.fsg-id        u:object_r:moto_var_prop:s0
+
+# wifi related property
+vendor.wifi             u:object_r:vendor_wifi_prop:s0
+
+# color mode related property
+persist.vendor.display.colormode             u:object_r:vendor_graphic_composer_prop:s0
+
+# property related to audio
+vendor.audio_hal.              u:object_r:vendor_audio_prop:s0
+
+# property related to aov
+vendor.hw.aov.                    u:object_r:vendor_aov_prop:s0
+
+# Property related to mbn test app
+persist.vendor.radio.mbn_type        u:object_r:vendor_radio_prop:s0
+
+#Property related to netmgrd
+vendor.net.                        u:object_r:vendor_net_radio_prop:s0
+
+# Moto custom boot properties
+ro.boot.carrier                    u:object_r:vendor_boot_prop:s0
+ro.boot.device                     u:object_r:vendor_boot_prop:s0
+ro.boot.lcd_density                u:object_r:vendor_boot_prop:s0
+ro.boot.fsg-id                     u:object_r:vendor_boot_prop:s0
+ro.boot.hwrev                      u:object_r:vendor_boot_prop:s0
+ro.boot.modelno                    u:object_r:vendor_boot_prop:s0
+ro.boot.nav_keys                   u:object_r:vendor_boot_prop:s0
+ro.boot.powerup_reason             u:object_r:vendor_boot_prop:s0
+ro.boot.cid                        u:object_r:vendor_boot_prop:s0
+ro.boot.bl_state                   u:object_r:vendor_boot_prop:s0
+ro.boot.adb_early                  u:object_r:vendor_boot_prop:s0
+ro.boot.radio                      u:object_r:vendor_boot_prop:s0
+
+#vendor radio related prop
+##[LJG,DUP WITH SAMSUNG]vendor.ril.                        u:object_r:vendor_radio_prop:s0
+
+# nfc fw_status in vendor contexts
+vendor.nfc.fw_status                u:object_r:vendor_nfc_prop:s0
+persist.vendor.nfc.                 u:object_r:vendor_nfc_prop:s0
+
+# Property related to lte pco
+persist.vendor.lte                 u:object_r:vendor_radio_prop:s0
+
+# Property for Moto powercycle test
+persist.vendor.autotest.         u:object_r:moto_public_vendor_default_prop:s0
+
+# Property of camera
+vendor.camera.mot.hal.running.mode        u:object_r:camera_aux_prop:s0
+#line 1 "motorola/security/sepolicy/dolby/property_contexts"
+#Dolby persist debug log level property
+persist.vendor.dolby.loglevel   u:object_r:vendor_dolby_loglevel_prop:s0
+#line 1 "system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.

@@ -1,0 +1,9 @@
+vendor_bridge_rw::5001:
+vendor_pwric::9001:
+vendor_tcmd::9004:
+mot_tcmd::9004:
+vendor_dbvc::9014:
+vendor_fingerp::9015:
+vendor_dtv::9019:
+vendor_mod::9020:
+vendor_prod_persist::9021:

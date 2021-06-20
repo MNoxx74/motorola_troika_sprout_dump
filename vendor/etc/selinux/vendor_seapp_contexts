@@ -1,0 +1,15 @@
+user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging domain=vendor_telephony_app
+user=system seinfo=platform name=com.samsung.slsi.telephony.silentlogging:remote domain=vendor_telephony_app
+user=system seinfo=platform name=com.samsung.slsi.telephony.testmode domain=vendor_telephony_app
+user=system seinfo=platform name=com.samsung.slsi.telephony.uartswitch domain=vendor_telephony_app
+user=system seinfo=platform name=com.samsung.slsi.sysdebugmode domain=vendor_telephony_app
+user=system seinfo=platform name=com.samsung.slsi.telephony.networktestmode domain=vendor_telephony_app
+user=radio seinfo=platform name=com.shannon.imsservice domain=vendor_ims_app
+user=radio seinfo=platform name=com.shannon.imsservice:remote domain=vendor_ims_app
+user=system seinfo=platform name=com.samsung.slsi.cnntlogger domain=vendor_wlbt_app
+user=system seinfo=platform name=com.trustonic.teeservice domain=teed_app
+user=system seinfo=platform name=com.gd.mobicore.pa domain=teeregistryd_app
+user=_app seinfo=common domain=platform_app type=app_data_file levelFrom=user
+user=_app seinfo=common domain=untrusted_app name=com.motorola.MotGallery2 type=app_data_file levelFrom=user
+user=_app seinfo=common domain=untrusted_app name=com.motorola.ts.camera type=app_data_file levelFrom=user
+user=_app seinfo=mobicore name=com.mizmowireless.acctmgt domain=mobicore_app type=app_data_file levelFrom=user
