@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+
+    <carrier
+        operatorID="timbr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.TimBrActivityImpl"
+            enabled="false" >
+        </component>
+
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="amxbr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.ClaroBrActivityImpl"
+            enabled="false" >
+        </component>
+
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="tefbr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.VivoBrActivityImpl"
+            enabled="false" >
+        </component>
+
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="niibr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" />
+    </carrier>
+
+    <carrier
+        operatorID="retbr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="oibr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" />
+    </carrier>
+
+    <carrier
+        operatorID="openbr"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.BrAppsActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="tefmx"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.MovistarMxActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="tefco"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.MovistarCoActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="tigco"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.TigoCoActivityImpl"
+            enabled="true" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="tefpe"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.MovistarPeActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="niipe"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.EntelPeActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="attmx"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.AttMxActivityImpl"
+            enabled="false" />
+    </carrier>
+
+    <carrier
+        operatorID="attmx"
+        spn=""
+        plmn="334050" >
+        <component
+            classname="com.motorola.brapps.ui.AttMxUnefonActivityImpl"
+            enabled="false" />
+
+        <component
+            classname="com.motorola.brapps.ui.AttMxActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="attmx"
+        spn=""
+        plmn="334090" >
+        <component
+            classname="com.motorola.brapps.ui.AttMxUnefonActivityImpl"
+            enabled="false" />
+
+        <component
+            classname="com.motorola.brapps.ui.AttMxActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="attmx"
+        spn="(?i)^unefon.*"
+        plmn="334050" >
+        <component
+            classname="com.motorola.brapps.ui.AttMxActivityImpl"
+            enabled="false" />
+
+        <component
+            classname="com.motorola.brapps.ui.AttMxUnefonActivityImpl"
+            enabled="false" >
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="amxmx"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.TelcelMxActivityImpl"
+            enabled="false" />
+    </carrier>
+
+    <carrier
+        operatorID="amxmx"
+        spn=""
+        plmn="334020" >
+        <component
+            classname="com.motorola.brapps.ui.TelcelMxActivityImpl"
+            enabled="true" >
+            <shortcut x="3" y="4" screen="0" replace="true" />
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="openmx"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.OpenMxActivityImpl"
+            enabled="false" />
+    </carrier>
+
+    <carrier
+        operatorID="openmx"
+        spn=""
+        plmn="334020" >
+        <component
+            classname="com.motorola.brapps.ui.OpenMxActivityImpl"
+            enabled="true" >
+            <shortcut x="3" y="4" screen="0" replace="true" />
+        </component>
+    </carrier>
+
+    <carrier
+        operatorID="amxco"
+        spn="" >
+        <component
+            classname="com.motorola.brapps.ui.ClaroCoActivityImpl"
+            enabled="false" />
+    </carrier>
+
+</settings>

@@ -1,0 +1,14 @@
+# user 10 QSBS30.62-17-17-5 61363 release-keys
+- manufacturer: 
+- platform: erd9610
+- codename: troika_sprout
+- flavor: user
+- release: 10
+- id: QSBS30.62-17-17-5
+- incremental: 61363
+- tags: release-keys
+- fingerprint: motorola/troika_retail/troika_sprout:10/QSBS30.62-17-17-5/61363:user/release-keys
+- is_ab: true
+- brand: motorola
+- branch: user-10-QSBS30.62-17-17-5-61363-release-keys
+- repo: motorola_troika_sprout_dump

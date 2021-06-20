@@ -1,0 +1,13 @@
+#
+# OEM_BUILD_PROPERTIES
+#
+ro.build.version.incremental=61363
+ro.build.version.ci=5
+ro.mot.build.guid=7d178c65b5ebc41
+ro.mot.base_buildid=QSB30.62-17-17/f59475
+ro.product.name=troika
+ro.product.system.name=troika
+ro.product.product.name=troika
+ro.mot.build.oem.product=troika
+ro.mot.build.customerid=retail
+ro.product.device=troika_sprout

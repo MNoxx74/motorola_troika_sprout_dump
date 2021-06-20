@@ -1,0 +1,16 @@
+kernel=kernel
+ramdisk=ramdisk
+second=second.img
+dt=dt.img
+page_size=2048
+kernel_size=25774092
+ramdisk_size=10315295
+second_size=133233
+dtb_size=1
+base_addr=0x10000000
+kernel_offset=0x00008000
+ramdisk_offset=0x00000000
+tags_offset=0x00000000
+cmd_line='loop.max_part=7 buildvariant=user'
+board=""
+format=gzip

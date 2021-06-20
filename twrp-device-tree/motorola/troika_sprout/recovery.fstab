@@ -1,0 +1,15 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      /dev/block/bootdevice/by-name/system                                  flags=display="System";backup=1;
+/system_image       emmc      /dev/block/bootdevice/by-name/system                                  flags=display="System image";backup=1;flashimg=1;
+/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=display="Data";
+/efs                ext4      /dev/block/bootdevice/by-name/efs                                     flags=display="Efs";
+/persist            ext4      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist";
+/persist_image      emmc      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist image";backup=1;flashimg=1;
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
+/slotinfo           emmc      /dev/block/bootdevice/by-name/slotinfo                                flags=display="Slotinfo";
+/persist            ext4      /dev/block/bootdevice/by-name/persist2                                flags=display="Persist";
+/persist_image      emmc      /dev/block/bootdevice/by-name/persist2                                flags=display="Persist image";backup=1;flashimg=1;
+none                swap      /dev/block/zram0                                                      flags=display="None";
+/mmc_host*          auto      auto                                                                  flags=display="Mmc_host*";logical;
+/13200000.usb*      auto      vfat                                                                  flags=display="13200000.usb*";logical;
+/13200000.dwc3*     auto      vfat                                                                  flags=display="13200000.dwc3*";logical;
